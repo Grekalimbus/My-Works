@@ -1,17 +1,19 @@
 .header{
     width: 320px;    
-    height: 100vh;
-    border: 2px solid rgb(238, 24, 24);
+    height: 100vh;    
     background-image: url('../../image/backgruond.png');
     background-repeat: no-repeat;
     background-size: cover;      
     display: flex;
     flex-direction: column;
     align-items: center; 
+    border-right: 3px solid rgb(110, 110, 110);
 }
-
-.face{    
-    border: 2px solid rgb(238, 24, 24);
+.Section{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .h1{
