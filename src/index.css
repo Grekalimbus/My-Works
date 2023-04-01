@@ -21,9 +21,17 @@ html,body{
   font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;   
+  -webkit-text-size-adjust: 100%;     
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+}
+body::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: #242424;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #707070;
+  border-radius: 5px;
 }
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}

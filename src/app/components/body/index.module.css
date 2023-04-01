@@ -1,5 +1,82 @@
-.body{
+.body {
+    width: 100%;
+    margin-left: 280px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid rgb(188, 16, 223);
+  } 
+  
+  .h2 {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .card {
+    margin-top: 50px;
+    width: 97%;
+    height: 60vh;
+    display: flex;
+    background-color: rgb(37, 37, 37);
+  }
+  
+  .blockImage {
+    width: 65%;
+    height: 100%;
+    border: 3px solid rgb(196, 55, 55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button {    
+    display: flex;
+    align-items: center;
+    cursor: pointer;    
+    font-size: 56px;
+    color: aliceblue;   
+    position:static;
+    left: 50%;   
+    height: 100%;    
+  }
+  
+  .divImagesWrapper {
     width: 100%;
     height: 100%;
-    border: 2px solid rgb(238, 24, 24);
+    overflow: hidden;    
+  }
+  
+  .divImages {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .oneImageDiv {    
+    width: 120%;
+    height: 100%;    
+  }
+  
+  .img {      
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgb(123, 196, 55);
+  object-fit: cover;
+  }
+  
+.blockInfo{
+    width: 35%;
+    height: 100%;    
+    border: 3px solid rgb(57, 55, 196);
+}
+@media (max-height: 665px) {
+    .body{margin-left: 0px;}
+}
+@media (max-width: 900px) {
+    .body{margin-left: 0px;}
 }

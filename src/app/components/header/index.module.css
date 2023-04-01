@@ -1,6 +1,7 @@
 .header{
-    width: 320px;    
+    width: 280px;    
     height: 100vh;    
+    position: fixed;
     background-image: url('../../image/backgruond.png');
     background-repeat: no-repeat;
     background-size: cover;      
