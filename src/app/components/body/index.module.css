@@ -6,8 +6,7 @@
     flex-direction: column;
     overflow: auto;
     align-items: center;
-    margin-bottom: 30px;
-    border: 1px solid rgb(188, 16, 223);
+    margin-bottom: 30px;    
   } 
   
   .h2 {
@@ -22,12 +21,12 @@
     height: 60vh;
     display: flex;
     background-color: rgb(37, 37, 37);
+    border-radius: 4px;
   }
   
   .blockImage {
     width: 65%;
-    height: 100%;
-    border: 3px solid rgb(196, 55, 55);
+    height: 100%;    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,35 +63,36 @@
   
   .img {      
   width: 100%;
-  height: 100%;
-  border: 3px solid rgb(123, 196, 55);
+  height: 100%;  
   object-fit: cover;
   }
   
 .blockInfo{
     width: 35%;
-    height: 100%;    
-    border: 3px solid rgb(57, 55, 196);
+    height: 100%;       
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .nameProject{    
-    margin-left: 10px; 
+    margin-left: 26px;
+    font-size: 26px;
 }
 .titleProject{   
-    margin-left: 15px;
-    color: rgb(129, 129, 129);
+    margin-left: 28px;
+    margin-top: 10px;
+    color: rgb(199, 198, 198);
     font-weight: 200;
+    width: 90%;
 }
 .technologyFlex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-left: 26px;   
     align-items: center;
 }
-.technology{
-    width: 50px;
+.technology{    
+    padding: 10px;
     height: 30px;
     margin: 2px;
     display: flex;
@@ -101,8 +101,24 @@
     align-items: center;
     border-radius: 5px;
     background-color: rgb(238, 156, 3);
-    color: black;
+    color: rgb(250, 250, 250);
 }
+.linksFlex{
+    display: flex;
+    margin-left: 26px;  
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    color: aliceblue;
+    border-radius: 5px;
+    width: 100%;    
+    padding: 10px;
+    height: 30px;      
+    background-color: rgb(105, 4, 236);
+}
+
 @media (max-height: 665px) {
     .body{margin-left: 0px;}
 }
@@ -116,7 +132,7 @@
         align-items: center;
         flex-direction: column-reverse;
         height: 100%;
-        background-color: rgba(37, 37, 37, 0);
+        padding-top: 18px;        
     }
     .blockImage{
         width: 90%;
@@ -124,5 +140,12 @@
     }
     .blockInfo{
         width: 90%;       
+    }
+    .technologyFlex{        
+        margin-top: 20px;
+    }
+    .linksFlex{
+        margin-top: 20px;        
+        margin-bottom: 10px;        
     }
 }

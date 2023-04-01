@@ -2,6 +2,7 @@ import React, { FC, useState } from 'react';
 import styles from './index.module.css';
 import ImageBlock from './ImageBlock';
 import Technology from './Technology';
+import Links from './Links';
 
 interface ICard {
   name: string;
@@ -51,7 +52,7 @@ const Card: FC<Props> = ({ numSlides, card }) => {
             return <Technology key={item} item={item} />;
           })}
         </div>
-        <div></div>
+        <Links card={card} />
       </div>
     </div>
   );

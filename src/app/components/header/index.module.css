@@ -1,14 +1,13 @@
 .header{
     width: 280px;    
     height: 100vh;    
-    position: fixed;
-    background-image: url('../../image/backgruond.png');
+    position: fixed;  
+    background-image: url('../../image/backgruond.png'); 
     background-repeat: no-repeat;
     background-size: cover;      
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    border: 3px solid rgb(218, 214, 9);
+    align-items: center;    
     border-right: 3px solid rgb(110, 110, 110);
 }
 .Section{
