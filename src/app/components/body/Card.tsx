@@ -1,12 +1,24 @@
 import React, { FC, useState } from 'react';
 import styles from './index.module.css';
-import left from '../../image/left.svg';
-import right from '../../image/right.svg';
-import testIMG from '../../image/test.png';
+import ImageBlock from './ImageBlock';
+import Technology from './Technology';
 
-const Card: FC = () => {
+interface ICard {
+  name: string;
+  image: string[];
+  title: string;
+  technology: string[];
+  repo: string;
+  demo?: string;
+}
+
+interface Props {
+  numSlides: number;
+  card: ICard;
+}
+
+const Card: FC<Props> = ({ numSlides, card }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const numSlides = 3; // replace with actual number of slides
 
   const handlePrevSlide = () => {
     setCurrentSlide(currentSlide === 0 ? numSlides - 1 : currentSlide - 1);
@@ -22,27 +34,25 @@ const Card: FC = () => {
         <div className={styles.button} onClick={handlePrevSlide}>
           <p>{'<'}</p>
         </div>
-        <div className={styles.divImagesWrapper}>
-          <div
-            className={styles.divImages}
-            style={{ transform: `translateX(-${currentSlide * 33.3}%)` }}
-          >
-            <div className={styles.oneImageDiv}>
-              <img className={styles.img} src={testIMG} alt=""></img>
-            </div>
-            <div className={styles.oneImageDiv}>
-              <img className={styles.img} src={testIMG} alt=""></img>
-            </div>
-            <div className={styles.oneImageDiv}>
-              <img className={styles.img} src={testIMG} alt=""></img>
-            </div>
-          </div>
-        </div>
+        <ImageBlock currentSlide={currentSlide} card={card} />
         <div className={styles.button} onClick={handleNextSlide}>
           <p>{'>'}</p>
         </div>
       </div>
-      <div className={styles.blockInfo}>title</div>
+      <div className={styles.blockInfo}>
+        <div className={styles.nameProject}>
+          <h2>{card.name}</h2>
+        </div>
+        <div className={styles.titleProject}>
+          <p>{card.title}</p>
+        </div>
+        <div className={styles.technologyFlex}>
+          {card.technology.map((item) => {
+            return <Technology key={item} item={item} />;
+          })}
+        </div>
+        <div></div>
+      </div>
     </div>
   );
 };
