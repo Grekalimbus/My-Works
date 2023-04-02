@@ -92,6 +92,18 @@
     height: 30px;      
     background-color: rgb(88, 2, 201);
 }
+
+@media (max-height: 750px) {
+    .card{
+        height: 75vh;
+    }
+}
+@media (max-height: 650px) {
+    .card{
+        height: 85vh;
+    }
+}
+
 @media (max-width: 1440px){        
     .blockInfo{
         width: 40%;        
@@ -104,7 +116,7 @@
 @media (max-width: 1180px) {    
     .card{
         align-items: center;
-        flex-direction: column-reverse;
+        flex-direction: column;
         height: 100%;
         padding-top: 18px;        
     }
@@ -118,7 +130,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
         border-radius: 5px;
-        margin-bottom: 10px;
+        margin-top: 10px;
     }
     .technologyFlex{        
         margin-top: 20px;
