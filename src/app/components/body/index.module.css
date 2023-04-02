@@ -21,9 +21,9 @@
     }
 }
 
-@media (max-height: 665px) {
+/* @media (max-height: 665px) {
     .body{margin-left: 0px;}
-}
+} */
 @media (max-width: 900px) {
     .body{margin-left: 0px;}
 }

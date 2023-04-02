@@ -67,9 +67,6 @@
     }
 }
 
-@media (max-height: 665px) {
-    .header{display: none;}
-}
 @media (max-width: 900px) {
     .header{display: none;}
 }
