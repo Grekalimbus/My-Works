@@ -20,7 +20,10 @@ const ImageBlock: FC<Props> = ({ currentSlide, card }) => {
     <div className={styles.divImagesWrapper}>
       <div
         className={styles.divImages}
-        style={{ transform: `translateX(-${(currentSlide * 100) / 3}%)` }}
+        style={{
+          transform: `translateX(-${(currentSlide * 100) / 3}%)`,
+          width: `${card.image.length * 100}%`,
+        }}
       >
         {card.image.map((item) => {
           return (
