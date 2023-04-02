@@ -1,7 +1,7 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import styles from './index.module.css';
-import Links from '../body/Links';
-import Technology from '../body/Technology';
+import Links from './Links';
+import Technology from './Technology';
 
 interface ICard {
   name: string;

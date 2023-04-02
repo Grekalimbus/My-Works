@@ -60,6 +60,13 @@
 }
 .p{margin-top: 10px;}
 
+
+@media (max-width: 1440px){        
+    .header{
+        width: 250px;
+    }
+}
+
 @media (max-height: 665px) {
     .header{display: none;}
 }

@@ -12,13 +12,17 @@ const Sliders: FC<Props> = ({ children }) => {
 
   const handleLeftClick = () => {
     const newOffset = offset + 100;
+    console.log(offset);
+
     setOffset((prevState) => (prevState = Math.min(newOffset, 0)));
   };
   const handleRightClick = () => {
     const newOffset = offset - 100;
     const maxOffset = -(100 * (pages.length - 1));
-    console.log(maxOffset);
     setOffset((prevState) => (prevState = Math.max(newOffset, maxOffset)));
+    if (newOffset === maxOffset - 100) {
+      setOffset(0);
+    }
   };
 
   useEffect(() => {

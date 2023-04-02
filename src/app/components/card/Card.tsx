@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import styles from './index.module.css';
 import Info from './Info';
 import Sliders from './Sliders';
@@ -20,9 +20,9 @@ const Card: FC<Props> = ({ card }) => {
   return (
     <div className={styles.card}>
       <Sliders>
-        <div className={styles.itemSlide}>Slide</div>
-        <div className={styles.itemSlide}>Slide</div>
-        <div className={styles.itemSlide}>Slide</div>
+        {card.image.map((item) => {
+          return <img key={item} src={item} alt={item}></img>;
+        })}
       </Sliders>
       <Info card={card} />
     </div>
