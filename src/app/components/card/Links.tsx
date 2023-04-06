@@ -30,7 +30,7 @@ const Links: FC<Props> = ({ card }) => {
         <ul className={styles.linksFlex}>
           <li>
             <a className={styles.link} href={card.repo} target="_blank">
-              Репазиторий
+              Репозиторий
             </a>
           </li>
           <li>
