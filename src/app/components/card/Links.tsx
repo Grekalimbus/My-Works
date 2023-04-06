@@ -24,7 +24,7 @@ const Links: FC<Props> = ({ card }) => {
           target="_blank"
           style={{ width: '50%', margin: '0 auto' }}
         >
-          Репазиторий
+          Репозиторий
         </a>
       ) : (
         <ul className={styles.linksFlex}>
