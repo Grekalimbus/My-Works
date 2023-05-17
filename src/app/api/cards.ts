@@ -17,7 +17,7 @@ export const cards: ICard[] = [
     technology: ['HTML', 'CSS', 'JS', "React", "Redux", "Node.js","MongoDB", "Firebase", "HTTP",'Axios','Postman', "Figma", "GitHub"],
     repo: 'https://github.com/Grekalimbus/Trend_Shoes/tree/main' },
     {name: 'Kind Todo',
-    image: ["https://i.postimg.cc/3RtNHY15/have-Todo-And-Comment-Write.png", "https://i.postimg.cc/mgMxSzRh/change-Comment.png", "https://i.postimg.cc/QMXjNvHX/create-Todo-Page.png", 'https://i.postimg.cc/mZ0zZ2RB/2.png', 'https://i.postimg.cc/9MsMf16J/followers.png', 'https://i.postimg.cc/L6tXHtN3/sign-Up-Errors.png'],
+    image: ["https://i.postimg.cc/G21RS2yh/image.png", "https://i.postimg.cc/vHTJh9Nt/image.png", "https://i.postimg.cc/QMXjNvHX/create-Todo-Page.png", 'https://i.postimg.cc/nrC34Khs/image.png', 'https://postimg.cc/18dJ24WR/fe8a014c', 'https://i.postimg.cc/c4fbXmcY/image.png'],
     title: 'Небольшая социальная сеть, в которой пользователи могут создавать списки добрых дел, получить за них рейтинг, изменять/удалять их. Пользователи могут добавлять в друзья других пользователей и смотреть их списки добрых дел. Есть возможность оставлять комментарии.',
     technology: ['HTML', 'CSS', "Styled-components", 'TS', "NextJS", "Redux", "NestJS","MongoDB", "HTTP",'Axios','Postman', "Figma", "GitHub", "Docker"],
     repo: 'https://github.com/Grekalimbus/TZ-minsk-client, https://github.com/Grekalimbus/TZ-minsk-server' },
