@@ -20,7 +20,7 @@ export const cards: ICard[] = [
     image: ["https://i.postimg.cc/G21RS2yh/image.png", "https://i.postimg.cc/vHTJh9Nt/image.png", "https://i.postimg.cc/QMXjNvHX/create-Todo-Page.png", 'https://i.postimg.cc/nrC34Khs/image.png', 'https://i.postimg.cc/c4fbXmcY/image.png'],
     title: 'Небольшая социальная сеть, в которой пользователи могут создавать списки добрых дел, получить за них рейтинг, изменять/удалять их. Пользователи могут добавлять в друзья других пользователей и смотреть их списки добрых дел. Есть возможность оставлять комментарии.',
     technology: ['HTML', 'CSS', "Styled-components", 'TS', "NextJS", "Redux", "NestJS","MongoDB", "HTTP",'Axios','Postman', "Figma", "GitHub", "Docker"],
-    repo: 'https://github.com/Grekalimbus/TZ-minsk-client, https://github.com/Grekalimbus/TZ-minsk-server' },
+    repo: 'https://github.com/Grekalimbus/TZ-minsk-client' },
     {name: 'Лендинг со слайдерами',
     image: ["https://i.postimg.cc/3r4byn27/image.png","https://i.postimg.cc/8zDy0G9P/image.png","https://i.postimg.cc/gjFyLqPk/image.png", "https://i.postimg.cc/021Zzx8d/image.png"],
     title: 'Чего-то большого об этом проекте не скажешь. Небольшой функционал на ванильном JS. Можно посмотреть по ссылке ниже "Демо". Все рисунки сделаны мной лично. В прошлом я занимался тату и хобби рисовать всё еще осталось.',
