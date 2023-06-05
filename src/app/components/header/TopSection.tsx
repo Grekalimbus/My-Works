@@ -12,9 +12,6 @@ const TopSection: FC = () => {
       <h1 className={styles.h1}>Данил Гречкин</h1>
       <h2 className={styles.h2}>Full-Stack Web разработчик</h2>
       <div className={styles.wrapperContacts}>
-        <a href="https://www.instagram.com/danilimbus/" target="_blank">
-          <img src={inst} alt="Inst" />
-        </a>
         <a href="https://t.me/makakanos" target="_blank">
           <img src={tg} alt="tg" />
         </a>
